@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h2>My First Form</h2>
+    <form>
+        <div>
+            <input type="radio" name="gender" value="male" id="fldMale" checked>
+            <label for="fldMale">Male</label>
+            <br>
+            <input type="radio" name="gender" value="female" id="fldFemale">
+            <label for="fldFemale">Female</label>
+            <br>
+            <input type="radio" name="gender" value="non-binary" id="fldN-B">
+            <label for="fldN-B">Non-Binary</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="vehicle1" value="bicycle" id="fldBicycle" checked>
+            <label for="fldBicycle">Bicycle</label>
+            <br>
+            <input type="checkbox" name="vehicle2" value="motorcycle" id="fldMotorcycle">
+            <label for="fldBike">Motorcycle</label>
+            <br>
+            <input type="checkbox" name="vehicle3" value="car" id="fldCar">
+            <label for="fldCar">Car</label>
+        </div>
+
+        <div>
+            <label for="fldNationality">Nationality</label>
+            <select name="nationality" id="fldNationality"></select>
+            <option value="" disabled selected>Choose Nationality</option>
+            <option value="greek">Greece</option>
+            <option value="english">England</option>
+            <option value="spain">Spain</option>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div>
+                    <label for="fldFirstname">Name</label>
+                    <input type="text" name="firstname" id="fldFirstname" placeholder="Enter your name" minlength="4"
+                        maxlength="15" required>
+                </div>
+                <div>
+                    <label for="fldWorkExperience">Years of Experience</label>
+                    <input type="number" name="work-experience" id="fldWorkExperience" min="3" max="20">
+                </div>
+                <div>
+                    <label for="fldEmail">Email</label>
+                    <input type="email" name="email" id="fldEmail">
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="fldMessage">Enter your message</label>
+            <textarea name="message" id="fldMessage" rows="10" cols="30"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submition">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</body>
+
+</html>
