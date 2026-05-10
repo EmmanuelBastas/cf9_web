@@ -62,7 +62,7 @@
     </div>
 
     <!-- Main -->
-    <main class="mt-2 mb-2">
+    <main class="mt-2 mb-2" id="main">
         <h2 class="mb-2">Coding Factory</h2>
         <section>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi hic fugit aliquam numquam delectus non sunt
@@ -85,7 +85,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div>&copy Coding Factory 2026 - Athens University of Economics adn Business</div>
         <div>
             <span>Follow Us:</span>
@@ -93,6 +93,21 @@
             <i class="fa-brands fa-linkedin"></i>
         </div>
     </footer>
+
+    <script>
+        const img = document.querySelector('.home-img');
+        const toggleBtn = document.querySelector('.navbar-toggler');
+        const navbarToggle = document.querySelector('.menu-toggler');
+        const main = document.getElementById('main');
+        const footer = document.getElementById('footer');
+
+        toggleBtn.addEventListener('click', function () {
+            img.classList.toggle('hidden');
+            navbarToggle.classList.toggle('show');
+            main.classList.toggle('hidden');
+            footer.classList.toggle('hidden');
+        })
+    </script>
 
 </body>
 

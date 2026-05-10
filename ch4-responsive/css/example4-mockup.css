@@ -43,7 +43,7 @@ nav > ul > li > a {
   font-size: 1.1rem;
 }
 
-nav > li > li:last-of-type {
+nav > ul > li:last-of-type {
   margin-right: 55px;
 }
 
@@ -131,4 +131,13 @@ footer {
   .navbar-toggler {
     display: block;
   }
+}
+
+/* Add for javascript */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
